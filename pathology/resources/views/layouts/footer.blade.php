@@ -1,0 +1,27 @@
+ <footer class="footer rounded-pill mb-4 mx-0 mx-md-4">
+              <div class="footer-body  ">
+                <div class="row d-flex flex-grow-1">
+                  <div class="col-lg-6 col-md-12">
+                    <ul
+                      class="left-panel list-inline mb-0 p-0 d-flex justify-content-center justify-content-lg-start">
+                      <li class="list-inline-item fw-500"><a class="footer-link"
+                          href="../extra-pages/privacy-policy.html">Privacy
+                          Policy</a></li>
+                      <li class="list-inline-item fw-500"><a
+                          class="footer-link footer-spacing"
+                          href="../extra-pages/terms-of-service.html">Terms of
+                          Use</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <h6
+                      class="right-panel mb-0 d-flex justify-content-center justify-content-lg-end">
+                      Copyright <script>document.write(new Date().getFullYear())</script> <a
+                        href="#" class="px-1"> XRay </a> All Rights Reserved.
+                    </h6>
+                  </div>
+            
+                </div>
+            
+              </div>
+            </footer>
