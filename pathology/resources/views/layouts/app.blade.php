@@ -85,7 +85,9 @@
     <link rel="stylesheet" href="../assets/vendor/phosphor-icons/Fonts/duotone/style.css">
     </link>
     <link rel="stylesheet" href="../assets/vendor/phosphor-icons/Fonts/fill/style.css">
-    </link></head>
+    </link>
+    @livewireStyles
+    </head>
 
 <body class="  ">
     <!-- loader Start -->
@@ -105,7 +107,7 @@
                  <!--Logo start-->
                  <div class="logo-main">
                      <img class="logo-normal img-fluid mb-3" src="../assets/images/logo.png" height="30" alt="logo">
-                     <span class="ms-2 brand-name">XRay</span>
+                     <span class="ms-2 brand-name">TM</span>
                  </div>
                  <!--logo End-->      </a>
         
@@ -685,6 +687,14 @@
     
     
     <script src="../assets/js/Setting/enchanter.js" defer></script>
-    <script src="../assets/js/plugins/countdown.js"></script></body>
+    <script src="../assets/js/plugins/countdown.js"></script>
+    
+    <script>
+    document.addEventListener("livewire:navigated", () => {
+        console.log('Livewire loaded');
+    });
+</script>
+    @livewireScripts
+    </body>
 
 </html>

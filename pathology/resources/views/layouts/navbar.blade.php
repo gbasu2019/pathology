@@ -239,7 +239,7 @@
                                   <img src="../assets/images/user/001.png" style="width: 50px; height: 50px;"
                                      class="img-fluid rounded" alt="user">
                                   <div class="caption d-none d-lg-block">
-                                     <h6 class="mb-0 line-height">Bini Jets</h6>
+                                     <h6 class="mb-0 line-height">{{auth()->user()->name}}</h6>
                                      <span class="font-size-12">Available</span>
                                   </div>
                                </a>

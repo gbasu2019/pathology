@@ -119,24 +119,24 @@
                          </div>
                      </li>
                  
-                     <li class="nav-item">
+                     {{-- <li class="nav-item">
                          <a class="nav-link " href="../calendar/calendar.html">
                              <i class="ri-calendar-2-line" data-bs-toggle="tooltip" title="Dashboard" data-bs-placement="right">
                              </i>
                              <span class="item-name ">Calendar</span>
                  
                          </a>
-                     </li>
+                     </li> --}}
                  
-                     <li class="nav-item">
+                     {{-- <li class="nav-item">
                          <a class="nav-link " href="../chat/chat.html">
                              <i class="ri-message-fill" data-bs-toggle="tooltip" title="Chat" data-bs-placement="right">
                              </i>
                              <span class="item-name ">Chat</span>
                  
                          </a>
-                     </li>
-                 
+                     </li> --}}
+{{--                  
                      <li class="nav-item static-item ms-2">
                          <a class="nav-link static-item disabled text-start" href="#" tabindex="-1">
                              <span class="default-icon">Components</span>
@@ -691,7 +691,7 @@
                                  </li>
                              </ul>
                          </div>
-                     </li>
+                     </li> --}}
                      <li>
                          <hr class="hr-horizontal">
                      </li>

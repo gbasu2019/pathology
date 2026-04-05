@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            {{-- <div class="col-md-6 col-lg-3">
                 <div class="card bg-warning-subtle">
                     <div class="card-body  ">
                         <div class="d-flex align-items-center justify-content-between">
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-md-6 col-lg-3">
                 <div class="card bg-danger-subtle ">
                     <div class="card-body  ">
@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-12">
+    {{-- <div class="col-sm-12">
         <div class="card ">
             <div class="card-header d-flex justify-content-between  ">
                 <div class="header-title">
@@ -629,7 +629,7 @@
                 <div id="apex-radialbar-chart"></div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 
 @endsection
