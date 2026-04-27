@@ -29,6 +29,18 @@ Route::middleware(['auth', 'role:Super Admin'])->group(function () {
 });
  Route::get('/createdoctor', function () {
     return view('doctoradd');});
-});
+    Route::get('/doctor/{id}', function ($id) {
+    return view('doctoredit',[
+            'id'=>$id,
+            
+             
+        ]);});
+
+
+
+
+ });
+
+
 
 require __DIR__.'/auth.php';

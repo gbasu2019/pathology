@@ -84,7 +84,7 @@
                              <ul class="sub-nav collapse" id="Doctor" data-bs-parent="#sidebar-menu">
                                  <li class="">
                                      <a class="nav-link "
-                                         href="../doctor/doctor-list.html">
+                                         href="../doctors">
                                          <i class="ri-file-list-fill">
                                          </i>
                                          <span class="item-name">All Doctor</span>
@@ -92,28 +92,14 @@
                                  </li>
                                  <li class="">
                                      <a class="nav-link "
-                                         href="../doctor/add-doctor.html">
+                                         href="/createdoctor">
                                          <i class="ri-user-add-fill">
                                          </i>
                                          <span class="item-name">Add Doctor</span>
                                      </a>
                                  </li>
-                                 <li class="">
-                                     <a class="nav-link "
-                                         href="../doctor/doctor-profile.html">
-                                         <i class="ri-profile-fill">
-                                         </i>
-                                         <span class="item-name">Doctor Profile</span>
-                                     </a>
-                                 </li>
-                                 <li class="">
-                                     <a class="nav-link "
-                                         href="../doctor/edit-doctor.html">
-                                         <i class="ri-file-edit-fill">
-                                         </i>
-                                         <span class="item-name">Edit Doctor</span>
-                                     </a>
-                                 </li>
+                                 
+                                
                  
                              </ul>
                          </div>

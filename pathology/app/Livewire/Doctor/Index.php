@@ -23,33 +23,7 @@ class Index extends Component
         return view('livewire.doctor.index');
     }
 
-    public function store()
-    {
-        $this->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users,email',
-            'password' => 'required|min:6'
-        ]);
-
-        // Create user
-        $user = User::create([
-            'name' => $this->name,
-            'email' => $this->email,
-            'password' => Hash::make($this->password),
-            'role_id' => 2 // Doctor role
-        ]);
-
-        // Create doctor
-        Doctor::create([
-            'user_id' => $user->id,
-            'specialization' => $this->specialization,
-            'qualification' => $this->qualification,
-            'phone' => $this->phone,
-            'chamber_address' => $this->chamber_address,
-        ]);
-
-        $this->resetForm();
-    }
+    
 
     public function edit($id)
     {

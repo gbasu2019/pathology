@@ -12,12 +12,21 @@ return new class extends Migration
    public function up()
 {
     Schema::create('doctors', function (Blueprint $table) {
-        $table->id();
-        $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-        $table->string('specialization')->nullable();
-        $table->string('qualification')->nullable();
-        $table->string('phone')->nullable();
-        $table->text('chamber_address')->nullable();
+        $table->increments('PK_DoctorID');
+        $table->unsignedBigInteger('FK_UserID')->nullable();
+        $table->string('FirstName')->nullable();
+        $table->string('MiddleName')->nullable();
+        $table->string('LastName')->nullable();
+        $table->string('Specialization')->nullable();
+        $table->string('Qualification')->nullable();
+        $table->string('DepartmentName')->nullable();
+        $table->string('MobileNo')->nullable();
+        $table->string('AltContactNo')->nullable();
+        $table->string('PinCode')->nullable();
+        $table->text('City')->nullable();
+        $table->text('Address')->nullable();
+        $table->text('Address2')->nullable();
+        $table->string('ProfileImage', length: 1000)->nullable(); 
         $table->timestamps();
     });
 }

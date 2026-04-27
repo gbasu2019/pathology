@@ -1,29 +1,6 @@
 <div class="container mt-4">
 
-    <h3>Doctor Management</h3>
-
-    {{-- FORM --}}
-    <div class="card p-3 mb-4">
-        <h5>{{ $isEdit ? 'Edit Doctor' : 'Add Doctor' }}</h5>
-
-        <input type="text" wire:model="name" placeholder="Name" class="form-control mb-2">
-        <input type="email" wire:model="email" placeholder="Email" class="form-control mb-2">
-
-        @if(!$isEdit)
-            <input type="password" wire:model="password" placeholder="Password" class="form-control mb-2">
-        @endif
-
-        <input type="text" wire:model="specialization" placeholder="Specialization" class="form-control mb-2">
-        <input type="text" wire:model="qualification" placeholder="Qualification" class="form-control mb-2">
-        <input type="text" wire:model="phone" placeholder="Phone" class="form-control mb-2">
-        <textarea wire:model="chamber_address" placeholder="Chamber Address" class="form-control mb-2"></textarea>
-
-        @if($isEdit)
-            <button wire:click="update" class="btn btn-warning">Update</button>
-        @else
-            <button wire:click="store" class="btn btn-primary">Save</button>
-        @endif
-    </div>
+   
  <div class="col-sm-12">
         <div class="card  ">
             <div class="card-header-custom d-flex justify-content-between p-4 mb-0">
@@ -57,13 +34,14 @@
                         <li class="list-group-item border-0 p-0"><a href="#"><i class="ri-google-fill"></i></a></li>
                     </ul>
                 </div>
-                <a href="../doctor/doctor-profile.html" class="btn btn-primary-subtle">View Profile</a>
+                <a href="/doctor/{{$doc->PK_DoctorID }}" class="btn btn-primary-subtle">View Profile</a>
+                
             </div>
         </div>
     </div> 
      @endforeach
     {{-- TABLE --}}
-    <table class="table table-bordered">
+    {{-- <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Name</th>
@@ -88,6 +66,6 @@
                 </tr>
             @endforeach
         </tbody>
-    </table>
+    </table> --}}
 
 </div>
